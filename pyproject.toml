@@ -17,3 +17,10 @@ disable = [
     "import-error"
 ]
 unsafe-load-any-extension = "y"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
