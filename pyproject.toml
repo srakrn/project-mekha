@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pylint.messages_control]
+max-line-length = 88
+enable = ["F", "E", "C", "R", "W"]
+disable = [
+    "no-absolute-import",
+    "missing-function-docstring",
+    "round-builtin",
+    "old-division",
+    "invalid-name",
+    "broad-except",
+    "logging-fstring-interpolation",
+    "protected-access",
+    "import-error"
+]
+unsafe-load-any-extension = "y"
